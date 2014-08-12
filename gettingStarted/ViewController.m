@@ -49,8 +49,8 @@
 }
 -(void)responseStatus:(id<ResponseInfo>)info{
     NSLog(@"responseStatus:");
-    NSLog(info.status);
-    NSLog(info.xml.description);
+    NSLog(@"%@",info.status);
+    NSLog(@"%@",info.xml.description);
 }
 
 -(void)responseScannerEvent:(id<ScannerEventResponseInfo>)info{
@@ -63,9 +63,46 @@
 
 -(void)responseFinanceStatus:(id<FinanceResponseInfo>)info{
     NSLog(@"responseFinanceStatus:");
-    NSLog(info.status);
-    NSLog(info.customerReceipt);
-    NSLog(info.xml.description);
+    NSLog(@"%@",info.status);
+    NSLog(@"%@",info.customerReceipt);
+    NSLog(@"%@",info.xml.description);
 }
+
+-(void)responseError:(id<ResponseInfo>)info{
+    NSLog(@"responceError");
+}
+
+-(void)cancelSignature{
+    NSLog(@"cancelSignature");
+}
+
+-(void)requestSignature:(NSString *)receipt{
+    NSLog(@"requestSignature");
+}
+
+-(void)didDiscoverFinished{
+    NSLog(@"didDiscoverFinished");
+}
+
+-(void)didDiscoverDevice:(HeftRemoteDevice *)newDevice{
+    NSLog(@"didDiscoverDevice");
+}
+
+-(void)didLostAccessoryDevice:(HeftRemoteDevice *)oldDevice{
+    NSLog(@"didLostAccessoryDevice");
+}
+
+-(void)hasSources{
+    NSLog(@"hasSources");
+}
+
+-(void)noSources{
+    NSLog(@"noSources");
+}
+
+-(void)responseLogInfo:(id<LogInfo>)info{
+    NSLog(@"responceLogInfo");
+}
+
 
 @end
