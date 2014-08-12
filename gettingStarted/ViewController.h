@@ -13,6 +13,9 @@
 
 @interface ViewController : UIViewController <HeftDiscoveryDelegate, HeftStatusReportDelegate>{
     
+    __weak IBOutlet UILabel *cardReaderSerial;
+    __weak IBOutlet UILabel *transactionStatus;
 }
 @property(nonatomic, strong) id<HeftClient> heftClient;
+@property(nonatomic, strong) HeftManager* manager;
 @end
