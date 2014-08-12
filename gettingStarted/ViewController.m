@@ -14,6 +14,8 @@
 
 @implementation ViewController
 @synthesize heftClient, manager;
+//Set the shared secret here
+NSString* sharedSecret = @"0102030405060708091011121314151617181920212223242526272829303132";
 
 - (void)viewDidLoad
 {
@@ -58,12 +60,17 @@
 //Creating a heftclient
 -(void)createClient:(HeftRemoteDevice *)newDevice{
     
-    // Declare the shared secret in hex numbers.
-    uint8_t ss[32] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29, 0x30, 0x31, 0x32};
-    
     heftClient = nil;
-    [manager clientForDevice:newDevice sharedSecret:[[NSData alloc] initWithBytes:ss length:sizeof(ss)] delegate:self];
+    [manager clientForDevice:newDevice sharedSecret:[self SharedSecretDataFromString:sharedSecret] delegate:self];
     
+}
+
+//Converts a shared secret string to NSDATA which is used by the SDK(Will be implemented in the SDK in the future)
+-(NSData*)SharedSecretDataFromString:(NSString*)sharedSecretString;
+{
+    NSMutableData* data = [NSMutableData data];
+    for (int i = 0 ; i < 32; i++) { NSRange range = NSMakeRange (i*2, 2); NSString *bytes = [sharedSecretString substringWithRange:range]; NSScanner* scanner = [NSScanner scannerWithString:bytes]; unsigned int intValue; [scanner scanHexInt:&intValue]; [data appendBytes:&intValue length:1]; }
+    return data;
 }
 
 #pragma mark HeftLibrary implementation
