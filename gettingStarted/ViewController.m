@@ -33,6 +33,9 @@
 -(void)didConnect:(id<HeftClient>)client {
     NSLog(@"didConnect");
     heftClient = client;
+    
+    // Do one sale
+    [heftClient saleWithAmount:100 currency:@"GBP" cardholder:YES];
 }
 
 -(void)didFindAccessoryDevice:(HeftRemoteDevice *)newDevice{
@@ -45,7 +48,9 @@
     [[HeftManager sharedManager] clientForDevice:newDevice sharedSecret:[[NSData alloc] initWithBytes:ss length:sizeof(ss)] delegate:self];
 }
 -(void)responseStatus:(id<ResponseInfo>)info{
-    NSLog(@"responceStatus");
+    NSLog(@"responseStatus:");
+    NSLog(info.status);
+    NSLog(info.xml.description);
 }
 
 -(void)responseScannerEvent:(id<ScannerEventResponseInfo>)info{
@@ -57,7 +62,10 @@
 }
 
 -(void)responseFinanceStatus:(id<FinanceResponseInfo>)info{
-    NSLog(@"responcefinanceStatus");
+    NSLog(@"responseFinanceStatus:");
+    NSLog(info.status);
+    NSLog(info.customerReceipt);
+    NSLog(info.xml.description);
 }
 
 @end
