@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeftClient.h"
+#import "HeftManager.h"
+#import "HeftStatusReportPublic.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <HeftDiscoveryDelegate, HeftStatusReportDelegate>
 
 @end

@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    HeftManager* manager = [HeftManager sharedManager];
+    manager.delegate = self;
+    [manager resetDevices]; // Clean out device list
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +28,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
