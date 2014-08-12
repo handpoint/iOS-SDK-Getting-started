@@ -11,6 +11,8 @@
 #import "HeftManager.h"
 #import "HeftStatusReportPublic.h"
 
-@interface ViewController : UIViewController <HeftDiscoveryDelegate, HeftStatusReportDelegate>
-
+@interface ViewController : UIViewController <HeftDiscoveryDelegate, HeftStatusReportDelegate>{
+    
+}
+@property(nonatomic, strong) id<HeftClient> heftClient;
 @end
