@@ -429,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
@@ -447,6 +448,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
@@ -516,6 +518,7 @@
 				7F82203B199A235400DC4944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F82203C199A235400DC4944 /* Build configuration list for PBXNativeTarget "gettingStartedTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				7F82203E199A235400DC4944 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
