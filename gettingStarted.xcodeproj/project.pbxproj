@@ -433,6 +433,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,6 +451,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
