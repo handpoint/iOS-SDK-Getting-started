@@ -22,9 +22,9 @@
 		7F82202C199A235400DC4944 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F82200B199A235400DC4944 /* UIKit.framework */; };
 		7F822034199A235400DC4944 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F822032199A235400DC4944 /* InfoPlist.strings */; };
 		7F822036199A235400DC4944 /* gettingStartedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F822035199A235400DC4944 /* gettingStartedTests.m */; };
-		7F822046199A239900DC4944 /* libheft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822045199A239900DC4944 /* libheft.a */; };
 		7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822047199A23E900DC4944 /* ExternalAccessory.framework */; };
 		7F82204A199A23F200DC4944 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822049199A23F200DC4944 /* Security.framework */; };
+		7FD780CC19C2139400278777 /* libheft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD780CB19C2139400278777 /* libheft.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +58,13 @@
 		7F822031199A235400DC4944 /* gettingStartedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gettingStartedTests-Info.plist"; sourceTree = "<group>"; };
 		7F822033199A235400DC4944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F822035199A235400DC4944 /* gettingStartedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = gettingStartedTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		7F822041199A239900DC4944 /* CmdIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdIds.h; sourceTree = "<group>"; };
-		7F822042199A239900DC4944 /* HeftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftClient.h; sourceTree = "<group>"; };
-		7F822043199A239900DC4944 /* HeftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftManager.h; sourceTree = "<group>"; };
-		7F822044199A239900DC4944 /* HeftStatusReportPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftStatusReportPublic.h; sourceTree = "<group>"; };
-		7F822045199A239900DC4944 /* libheft.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libheft.a; sourceTree = "<group>"; };
 		7F822047199A23E900DC4944 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7F822049199A23F200DC4944 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7FD780C719C2139400278777 /* CmdIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdIds.h; sourceTree = "<group>"; };
+		7FD780C819C2139400278777 /* HeftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftClient.h; sourceTree = "<group>"; };
+		7FD780C919C2139400278777 /* HeftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftManager.h; sourceTree = "<group>"; };
+		7FD780CA19C2139400278777 /* HeftStatusReportPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftStatusReportPublic.h; sourceTree = "<group>"; };
+		7FD780CB19C2139400278777 /* libheft.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libheft.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 			files = (
 				7F82204A199A23F200DC4944 /* Security.framework in Frameworks */,
 				7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */,
+				7FD780CC19C2139400278777 /* libheft.a in Frameworks */,
 				7F82200A199A235400DC4944 /* CoreGraphics.framework in Frameworks */,
 				7F82200C199A235400DC4944 /* UIKit.framework in Frameworks */,
-				7F822046199A239900DC4944 /* libheft.a in Frameworks */,
 				7F822008199A235400DC4944 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +97,7 @@
 		7F821FFB199A235400DC4944 = {
 			isa = PBXGroup;
 			children = (
-				7F82203F199A239900DC4944 /* HeftLibrary */,
+				7FD780C519C2139400278777 /* HeftLibrary */,
 				7F82200D199A235400DC4944 /* gettingStarted */,
 				7F82202F199A235400DC4944 /* gettingStartedTests */,
 				7F822006199A235400DC4944 /* Frameworks */,
@@ -171,22 +171,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F82203F199A239900DC4944 /* HeftLibrary */ = {
+		7FD780C519C2139400278777 /* HeftLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				7F822040199A239900DC4944 /* include */,
-				7F822045199A239900DC4944 /* libheft.a */,
+				7FD780C619C2139400278777 /* include */,
+				7FD780CB19C2139400278777 /* libheft.a */,
 			);
 			path = HeftLibrary;
 			sourceTree = "<group>";
 		};
-		7F822040199A239900DC4944 /* include */ = {
+		7FD780C619C2139400278777 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				7F822041199A239900DC4944 /* CmdIds.h */,
-				7F822042199A239900DC4944 /* HeftClient.h */,
-				7F822043199A239900DC4944 /* HeftManager.h */,
-				7F822044199A239900DC4944 /* HeftStatusReportPublic.h */,
+				7FD780C719C2139400278777 /* CmdIds.h */,
+				7FD780C819C2139400278777 /* HeftClient.h */,
+				7FD780C919C2139400278777 /* HeftManager.h */,
+				7FD780CA19C2139400278777 /* HeftStatusReportPublic.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -433,6 +433,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
+					"$(PROJECT_DIR)/HeftLibrarySimulator",
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +453,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeftLibrary",
+					"$(PROJECT_DIR)/HeftLibrarySimulator",
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
