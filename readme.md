@@ -4,7 +4,7 @@ Handpoint getting started sample version 1.0
 
 - There are some additional functions in this project to better explain how the Handpoint iOS SDK works.
 
-- This sample project assumes that an integrator has a development card reader, that uses the development shared secret: 0102030405060708091011121314151617181920212223242526272829303132, connected to an iOS device. Integrator should replace this (NSString* sharedSecret at the top of the file ViewController.m) with the shared secret provided to him with his development card reader.
+- This sample project assumes that an integrator has a development card reader, that uses the development shared secret: 0102030405060708091011121314151617181920212223242526272829303132, connected to an iOS device. **Integrator should replace this (NSString* sharedSecret at the top of the file ViewController.m) with the shared secret provided to him with his development card reader.**
 
 - The project was created using Xcode version 5.1.1 and has been tested on the following devices:
 iPhone 5s running iOS 7.1.2

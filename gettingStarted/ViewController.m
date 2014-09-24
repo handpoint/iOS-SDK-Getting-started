@@ -14,7 +14,7 @@
 
 @implementation ViewController
 @synthesize heftClient, manager;
-//Set the shared secret here
+//Set your unique shared secret here, provided by Handpoint with the dev kit 
 NSString* sharedSecret = @"0102030405060708091011121314151617181920212223242526272829303132";
 
 - (void)viewDidLoad
