@@ -49,6 +49,23 @@
  */
 
 /**
+ @brief The result of the financial transaction as one of:
+   EFT_FINANC_STATUS_UNDEFINED                0x00
+   EFT_FINANC_STATUS_TRANS_APPROVED           0x01
+   EFT_FINANC_STATUS_TRANS_DECLINED           0x02
+   EFT_FINANC_STATUS_TRANS_PROCESSED          0x03
+   EFT_FINANC_STATUS_TRANS_NOT_PROCESSED      0x04
+   EFT_FINANC_STATUS_TRANS_CANCELLED          0x05
+ */
+@property(nonatomic) NSInteger financialResult;
+
+/**
+ @brief indicates whether the card reader is about to restart or not (usually indicated after an update).
+ If a restart is indicated then you have 2 seconds to start fetching the logs (before the card reader restarts).
+ */
+@property(nonatomic) BOOL isRestarting;
+
+/**
  @brief	The authorisedAmount - in the smallest unit for the given
  CurrencyCode - for the transaction. ISO 4217 defines number of digits in
  fractional part of currency for every currency code. Example
@@ -75,6 +92,7 @@
 /**@}*/
 
 @end
+
 /**
  @brief Feedback for scanner event.
  */
@@ -181,8 +199,8 @@ DEPRECATED_ATTRIBUTE
 
 /**
  Notifies when cardholder's signature verification is needed.<br/> 
-	It should be typically used to print receipt and accept customer sign. Handler has to call acceptSignature:(BOOL)flag with YES if sign is valid and NO otherwise. If handler doesn't process message for 45s transaction will be declined and cancelSignature called.
- @param receipt				The receipt of transaction in html format.
+	It should be typically used to print the merchant receipt and accept the customer signature. Handler has to call acceptSignature:(BOOL)flag with YES if the signature is valid and NO otherwise. If the handler doesn't process the message in a timely manner (as dictated by the card reader) then the transaction will be declined and cancelSignature called (note: the typical configured time period on the card reader is 90s).
+ @param receipt				The merchant receipt of the transaction in html format.
  */
 - (void)requestSignature:(NSString*)receipt;
 
@@ -194,6 +212,12 @@ DEPRECATED_ATTRIBUTE
 /**@}*/
 
 @optional
+
+/**
+ Notifies that a previously lost transaction result has been recovered.
+ @param info				Complete information about the recovered transaction. nil if no lost transaction was found.
+ */
+- (void)responseRecoveredTransactionStatus:(id<FinanceResponseInfo>)info;
 
 /**
  Notifies that a scan has been performed.
