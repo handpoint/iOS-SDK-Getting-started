@@ -12,4 +12,4 @@ iPhone 5 running iOS 7.1.2
 iPhone 4s running iOS 7.1
 iPhone 4 running iOS 6.1.3
 
-- If you don't have a Handpoint Card Reader then you can download our SDK from https://www.handpoint.com/docs/device/iOS/ and replace the libheft.a file (in the HeftLibrary folder of this project) with the libheftsimulator.a that comes with the SDK.
+- If you don't have a Handpoint Card Reader then you can download our SDK from https://www.handpoint.com/docs/device/iOS/ and replace the libheft.a file (in the HeftLibrary folder of this project) with the libheftsimulator.a that comes with the SDK to simulate card reader responses.
