@@ -4,12 +4,13 @@ Handpoint getting started sample version 1.0
 
 - There are some additional functions in this project to better explain how the Handpoint iOS SDK works.
 
-- This sample project assumes that an integrator has a development card reader, that uses the development shared secret: 0102030405060708091011121314151617181920212223242526272829303132, connected to an iOS device. **Integrator should replace this (NSString* sharedSecret at the top of the file ViewController.m) with the shared secret provided to him with his development card reader.**
+- If you have a Handpoint card reader then you can download our SDK from https://www.handpoint.com/docs/device/iOS/ and replace the libheftsimulator.a file (in the HeftLibrary folder of this project) with the libheft.a that comes with the SDK to use the Handpoint card reader.
 
-- The project was created using Xcode version 5.1.1 and has been tested on the following devices:
-iPhone 5s running iOS 7.1.2
-iPhone 5 running iOS 7.1.2
-iPhone 4s running iOS 7.1
-iPhone 4 running iOS 6.1.3
+- This sample project assumes that the simulator is being used which uses the development shared secret: 0102030405060708091011121314151617181920212223242526272829303132. 
+- **Integrators using a Handpoint card reader should replace this (NSString* sharedSecret at the top of the file ViewController.m) with the shared secret provided to him with his development card reader.**
 
-- If you don't have a Handpoint Card Reader then you can download our SDK from https://www.handpoint.com/docs/device/iOS/ and replace the libheft.a file (in the HeftLibrary folder of this project) with the libheftsimulator.a that comes with the SDK to simulate card reader responses.
+- The project was created using Xcode version 6.1.1 and has been tested on the following devices:
+* iPhone 5s running iOS 7.1.2
+* iPhone 5 running iOS 7.1.2
+* iPhone 4s running iOS 7.1
+* iPhone 4 running iOS 6.1.3
