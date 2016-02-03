@@ -24,6 +24,7 @@
 		7F822036199A235400DC4944 /* gettingStartedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F822035199A235400DC4944 /* gettingStartedTests.m */; };
 		7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822047199A23E900DC4944 /* ExternalAccessory.framework */; };
 		7F82204A199A23F200DC4944 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822049199A23F200DC4944 /* Security.framework */; };
+		FB4C29F41C622FED00AB6A69 /* libheftsimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,11 @@
 		7F822035199A235400DC4944 /* gettingStartedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = gettingStartedTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7F822047199A23E900DC4944 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7F822049199A23F200DC4944 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FB4C29EF1C622FED00AB6A69 /* CmdIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdIds.h; sourceTree = "<group>"; };
+		FB4C29F01C622FED00AB6A69 /* HeftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftClient.h; sourceTree = "<group>"; };
+		FB4C29F11C622FED00AB6A69 /* HeftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftManager.h; sourceTree = "<group>"; };
+		FB4C29F21C622FED00AB6A69 /* HeftStatusReportPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftStatusReportPublic.h; sourceTree = "<group>"; };
+		FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libheftsimulator.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				7F82204A199A23F200DC4944 /* Security.framework in Frameworks */,
 				7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */,
 				7F82200A199A235400DC4944 /* CoreGraphics.framework in Frameworks */,
+				FB4C29F41C622FED00AB6A69 /* libheftsimulator.a in Frameworks */,
 				7F82200C199A235400DC4944 /* UIKit.framework in Frameworks */,
 				7F822008199A235400DC4944 /* Foundation.framework in Frameworks */,
 			);
@@ -90,6 +97,7 @@
 		7F821FFB199A235400DC4944 = {
 			isa = PBXGroup;
 			children = (
+				FB4C29ED1C622FED00AB6A69 /* HeftSimulatorLibrary */,
 				7F82200D199A235400DC4944 /* gettingStarted */,
 				7F82202F199A235400DC4944 /* gettingStartedTests */,
 				7F822006199A235400DC4944 /* Frameworks */,
@@ -161,6 +169,26 @@
 				7F822032199A235400DC4944 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB4C29ED1C622FED00AB6A69 /* HeftSimulatorLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				FB4C29EE1C622FED00AB6A69 /* include */,
+				FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */,
+			);
+			path = HeftSimulatorLibrary;
+			sourceTree = "<group>";
+		};
+		FB4C29EE1C622FED00AB6A69 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FB4C29EF1C622FED00AB6A69 /* CmdIds.h */,
+				FB4C29F01C622FED00AB6A69 /* HeftClient.h */,
+				FB4C29F11C622FED00AB6A69 /* HeftManager.h */,
+				FB4C29F21C622FED00AB6A69 /* HeftStatusReportPublic.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
