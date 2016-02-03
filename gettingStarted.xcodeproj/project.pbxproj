@@ -24,7 +24,7 @@
 		7F822036199A235400DC4944 /* gettingStartedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F822035199A235400DC4944 /* gettingStartedTests.m */; };
 		7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822047199A23E900DC4944 /* ExternalAccessory.framework */; };
 		7F82204A199A23F200DC4944 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F822049199A23F200DC4944 /* Security.framework */; };
-		7F9029571A7A35AB00781094 /* libheftsimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9029561A7A35AB00781094 /* libheftsimulator.a */; };
+		FB4C29F41C622FED00AB6A69 /* libheftsimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +60,11 @@
 		7F822035199A235400DC4944 /* gettingStartedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = gettingStartedTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		7F822047199A23E900DC4944 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		7F822049199A23F200DC4944 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		7F9029521A7A35AB00781094 /* CmdIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdIds.h; sourceTree = "<group>"; };
-		7F9029531A7A35AB00781094 /* HeftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftClient.h; sourceTree = "<group>"; };
-		7F9029541A7A35AB00781094 /* HeftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftManager.h; sourceTree = "<group>"; };
-		7F9029551A7A35AB00781094 /* HeftStatusReportPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftStatusReportPublic.h; sourceTree = "<group>"; };
-		7F9029561A7A35AB00781094 /* libheftsimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libheftsimulator.a; sourceTree = "<group>"; };
+		FB4C29EF1C622FED00AB6A69 /* CmdIds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdIds.h; sourceTree = "<group>"; };
+		FB4C29F01C622FED00AB6A69 /* HeftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftClient.h; sourceTree = "<group>"; };
+		FB4C29F11C622FED00AB6A69 /* HeftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftManager.h; sourceTree = "<group>"; };
+		FB4C29F21C622FED00AB6A69 /* HeftStatusReportPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeftStatusReportPublic.h; sourceTree = "<group>"; };
+		FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libheftsimulator.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				7F82204A199A23F200DC4944 /* Security.framework in Frameworks */,
 				7F822048199A23E900DC4944 /* ExternalAccessory.framework in Frameworks */,
 				7F82200A199A235400DC4944 /* CoreGraphics.framework in Frameworks */,
-				7F9029571A7A35AB00781094 /* libheftsimulator.a in Frameworks */,
+				FB4C29F41C622FED00AB6A69 /* libheftsimulator.a in Frameworks */,
 				7F82200C199A235400DC4944 /* UIKit.framework in Frameworks */,
 				7F822008199A235400DC4944 /* Foundation.framework in Frameworks */,
 			);
@@ -97,7 +97,7 @@
 		7F821FFB199A235400DC4944 = {
 			isa = PBXGroup;
 			children = (
-				7F9029501A7A35AB00781094 /* HeftSimulatorLibrary */,
+				FB4C29ED1C622FED00AB6A69 /* HeftSimulatorLibrary */,
 				7F82200D199A235400DC4944 /* gettingStarted */,
 				7F82202F199A235400DC4944 /* gettingStartedTests */,
 				7F822006199A235400DC4944 /* Frameworks */,
@@ -171,22 +171,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7F9029501A7A35AB00781094 /* HeftSimulatorLibrary */ = {
+		FB4C29ED1C622FED00AB6A69 /* HeftSimulatorLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				7F9029511A7A35AB00781094 /* include */,
-				7F9029561A7A35AB00781094 /* libheftsimulator.a */,
+				FB4C29EE1C622FED00AB6A69 /* include */,
+				FB4C29F31C622FED00AB6A69 /* libheftsimulator.a */,
 			);
 			path = HeftSimulatorLibrary;
 			sourceTree = "<group>";
 		};
-		7F9029511A7A35AB00781094 /* include */ = {
+		FB4C29EE1C622FED00AB6A69 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				7F9029521A7A35AB00781094 /* CmdIds.h */,
-				7F9029531A7A35AB00781094 /* HeftClient.h */,
-				7F9029541A7A35AB00781094 /* HeftManager.h */,
-				7F9029551A7A35AB00781094 /* HeftStatusReportPublic.h */,
+				FB4C29EF1C622FED00AB6A69 /* CmdIds.h */,
+				FB4C29F01C622FED00AB6A69 /* HeftClient.h */,
+				FB4C29F11C622FED00AB6A69 /* HeftManager.h */,
+				FB4C29F21C622FED00AB6A69 /* HeftStatusReportPublic.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -238,6 +238,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = handpoint;
 				TargetAttributes = {
+					7F822003199A235400DC4944 = {
+						DevelopmentTeam = 6BR4R3B384;
+					};
 					7F822027199A235400DC4944 = {
 						TestTargetID = 7F822003199A235400DC4944;
 					};
@@ -426,6 +429,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
@@ -437,6 +442,7 @@
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,6 +452,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
@@ -457,6 +465,7 @@
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

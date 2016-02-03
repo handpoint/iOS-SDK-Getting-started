@@ -11,6 +11,9 @@
  *
  **/
 
+#import <Foundation/Foundation.h>
+
+
 @protocol HeftClient;
 @protocol HeftStatusReportDelegate;
 @class HeftRemoteDevice;
@@ -103,7 +106,7 @@
  DEPRECATED: use -(NSString*)getSDKVersion;
  @brief Current HeftManager version. 
  */
-@property(nonatomic, readonly) NSString* version DEPRECATED_ATTRIBUTE;
+@property(nonatomic, readonly) NSString* version;
 
 /**
  @brief Current Handpoint SDK version.
@@ -136,5 +139,9 @@
  @param aDelegate				Delegate which will be perform HeftStatusReportDelegate notifications.
  */
 - (void)clientForDevice:(HeftRemoteDevice*)device sharedSecretString:(NSString*)sharedSecret delegate:(NSObject<HeftStatusReportDelegate>*)aDelegate;
+
+- (void)cleanup;
+
+- (void)timerCallback;
 
 @end
