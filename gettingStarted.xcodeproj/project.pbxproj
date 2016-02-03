@@ -238,6 +238,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = handpoint;
 				TargetAttributes = {
+					7F822003199A235400DC4944 = {
+						DevelopmentTeam = 6BR4R3B384;
+					};
 					7F822027199A235400DC4944 = {
 						TestTargetID = 7F822003199A235400DC4944;
 					};
@@ -426,6 +429,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
@@ -437,6 +442,7 @@
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,6 +452,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gettingStarted/gettingStarted-Prefix.pch";
 				INFOPLIST_FILE = "gettingStarted/gettingStarted-Info.plist";
@@ -457,6 +465,7 @@
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
