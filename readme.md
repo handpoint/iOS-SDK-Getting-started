@@ -1,4 +1,4 @@
-Handpoint getting started sample version 1.0
+Handpoint getting started sample version 1.1
 
 - This sample project uses the methods descriped in the getting started guide found on the Handpoint documentations site (https://www.handpoint.com/docs/device/iOS/#section_gettingStarted).
 
@@ -9,8 +9,4 @@ Handpoint getting started sample version 1.0
 - This sample project assumes that the simulator is being used which uses the development shared secret: 0102030405060708091011121314151617181920212223242526272829303132. 
 - **Integrators using a Handpoint card reader should replace this (NSString* sharedSecret at the top of the file ViewController.m) with the shared secret provided to him with his development card reader.**
 
-- The project was created using Xcode version 6.1.1 and has been tested on the following devices:
-* iPhone 5s running iOS 7.1.2
-* iPhone 5 running iOS 7.1.2
-* iPhone 4s running iOS 7.1
-* iPhone 4 running iOS 6.1.3
+- The project was last built using Xcode 7.2
